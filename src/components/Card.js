@@ -71,12 +71,13 @@ const Card = ({id, profilePicture, firstName, lastName, email, jobTitle, favorit
       <div className={styles.cardContainer}>
         <div className={styles.leftCardContainer}>
           <img className={styles.profilePicture} src={profilePicture}></img>
-          <div>
-            <h1 className={styles.nameText}>{firstName + ' ' + lastName + ' : ' + id}</h1>
+          <div className={styles.textContainer}>
+            <h1 className={styles.nameText}>{firstName + ' ' + lastName + ' '}</h1>
             <h2 className={styles.jobText}>{jobTitle}</h2>
             <a className={styles.emailText} href={'mailto:' + email}>{email}</a>
             <h2 className={styles.favoriteAnimeText}>Favorite Anime: <i>{favoriteAnime}</i></h2>
           </div>
+          <h3 className={styles.idText}>{id}</h3>
         </div>
         <div className={styles.colorSplotch} style={{backgroundColor: color}} />
       </div>
