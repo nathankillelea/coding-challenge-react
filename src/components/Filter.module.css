@@ -1,0 +1,48 @@
+.container {
+  position: relative;
+  width: 150px;
+  user-select: none;
+  z-index: 2;
+  border: 1px hsl(240, 1%, 49%) solid;
+  border-radius: 4px;
+  margin: 25px 25px 0px 0px;
+}
+
+.container:hover {
+  cursor: pointer;
+}
+
+.list {
+  position: absolute;
+  width: 100%;
+  list-style-type: none;
+  max-height: 265px;
+  overflow: auto;
+  background-color: #fff;
+  border: 1px hsl(240, 1%, 49%) solid;
+  border-radius: 4px;
+}
+
+.listItem {
+  padding: 10px;
+}
+
+.listItem:hover {
+  background-color: hsl(206, 33%, 96%);;
+}
+
+.filterIcon {
+  float: right;
+  padding-top: 3px;
+}
+
+.headerText {
+  color: hsl(240, 1%, 49%);
+  font-size: 18px;
+  padding: 10px;
+}
+
+.colorSplotch {
+  width: 100%;
+  height: 12px;
+}

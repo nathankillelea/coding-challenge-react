@@ -1,0 +1,43 @@
+.App {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  flex: 1;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1000px) {
+  .App {
+    max-width: 650px;
+  }
+}
+
+@media (max-width: 450px) {
+  .dropdownContainer {
+    flex-direction: column-reverse !important;
+    align-items: flex-end;
+  }
+}
+
+.loadingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.dropdownContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}

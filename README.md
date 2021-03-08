@@ -15,6 +15,8 @@ Your mission, should you choose to accept it, is to develop a client side applic
 # Requirement
 App users should be able to review all data on a aesthetically pleasing interface. Such interface should provide users the ability to filter results by "section" and sort users by all other data elements. 
 
+As an optional "extra credit", connect the UI to a public GraphQL endpoint from: https://github.com/APIs-guru/graphql-apis
+
 # Notes
 Implementation details are mostly up to you, just note that best practices are expected.
 
