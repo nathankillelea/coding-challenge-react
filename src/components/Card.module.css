@@ -3,6 +3,42 @@
   width: 50%;
 }
 
+.cardContainer {
+  display: flex;
+  flex: 1;
+  box-shadow: 0 5px 15px 0 hsla(0, 0%, 0%, 0.15);
+  border-radius: 15px;
+  margin: 25px;
+}
+
+.leftCardContainer {
+  display: flex;
+  flex: 1;
+  padding: 15px;
+}
+
+.profilePicture {
+  width: 128px;
+  height: 128px;
+  border-radius: 64px;
+  margin-right: 15px;
+}
+
+.emailText, .favoriteAnimeText {
+  padding-top: 4px;
+}
+
+.colorSplotch {
+  width: 50px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.jobText {
+  color: rgb(119,123,126);
+  padding-top: 8px;
+}
+
 @media (max-width: 1000px) {
   .container {
     width: 100%;
@@ -28,55 +64,10 @@
 }
 
 @media (max-width: 340px) {
-  .h1 {
+  .nameText {
     font-size: 16px;
   }
   .jobText, .emailText, .favoriteAnimeText {
     font-size: 12px;
   }
-}
-
-.cardContainer {
-  display: flex;
-  flex: 1;
-  box-shadow: 0 5px 15px 0 hsla(0, 0%, 0%, 0.15);
-  border-radius: 15px;
-  margin: 25px;
-}
-
-.leftCardContainer {
-  display: flex;
-  flex: 1;
-  padding: 15px;
-}
-
-.leftCardContent {
-  display: flex;
-  flex-direction: row;
-}
-
-.colorSplotch {
-  width: 50px;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-}
-
-.jobText {
-  color: rgb(119,123,126);
-  padding-top: 8px;
-}
-
-.emailText {
-  padding-top: 4px;
-}
-
-.favoriteAnimeText {
-  padding-top: 4px;
-}
-
-.profilePicture {
-  width: 128px;
-  height: 128px;
-  border-radius: 64px;
-  margin-right: 15px;
 }

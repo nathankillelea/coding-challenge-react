@@ -71,7 +71,7 @@ const Card = ({id, profilePicture, firstName, lastName, email, jobTitle, favorit
       <div className={styles.cardContainer}>
         <div className={styles.leftCardContainer}>
           <img className={styles.profilePicture} src={profilePicture}></img>
-          <div className={styles.textContainer}>
+          <div>
             <h1 className={styles.nameText}>{firstName + ' ' + lastName + ' : ' + id}</h1>
             <h2 className={styles.jobText}>{jobTitle}</h2>
             <a className={styles.emailText} href={'mailto:' + email}>{email}</a>

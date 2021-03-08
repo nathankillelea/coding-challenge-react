@@ -27,7 +27,7 @@ const Filter = ({filters, filter, setFilter}) => {
 
   return (
     <div className={styles.container} ref={ref} onClick={() => setIsListOpen(!isListOpen)}>
-      <div className={styles.header}>
+      <div>
         <h1 className={styles.headerText}>{filter ? filter : 'Filter By'}<FontAwesomeIcon icon={isListOpen ? faCaretUp : faCaretDown} className={styles.filterIcon} /></h1>
       </div>
       {isListOpen ?

@@ -30,27 +30,35 @@ const Sort = ({data, setData}) => {
       case 'Favorite Anime':
         setData([...data].sort((a, b) => a.favorite_anime.localeCompare(b.favorite_anime)));
     }
-  }, [sort])
+  }, [sort]);
 
-  const items = ['Id', 'First Name', 'Last Name', 'Email', 'Job Title', 'Favorite Anime']
+  const items = [
+    {id: 0, value: 'Id'},
+    {id: 1, value: 'First Name'},
+    {id: 2, value: 'Last Name'},
+    {id: 3, value: 'Email'},
+    {id: 4, value: 'Job Title'},
+    {id: 5, value: 'Favorite Anime'}
+  ];
 
   const sortValues = items.map(item => {
     return (
       <li
         className={styles.listItem}
-        style={{backgroundColor: sort === item ? 'hsl(206, 33%, 90%)' : null}}
+        key={item.id}
+        style={{backgroundColor: sort === item.value ? 'hsl(206, 33%, 90%)' : null}}
         onClick={() => {
-          setSort(item);
+          setSort(item.value);
         }}
       >
-        {item}
+        {item.value}
       </li>
     );
   });
 
   return (
     <div className={styles.container} ref={ref} onClick={() => setIsListOpen(!isListOpen)}>
-      <div className={styles.header}>
+      <div>
         <h1 className={styles.headerText}>{sort ? sort : 'Sort By'}<FontAwesomeIcon icon={isListOpen ? faCaretUp : faCaretDown} className={styles.filterIcon} /></h1>
       </div>
       {isListOpen ?

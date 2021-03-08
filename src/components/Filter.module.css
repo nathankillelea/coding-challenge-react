@@ -12,6 +12,17 @@
   cursor: pointer;
 }
 
+.headerText {
+  color: hsl(240, 1%, 49%);
+  font-size: 18px;
+  padding: 10px;
+}
+
+.filterIcon {
+  float: right;
+  padding-top: 3px;
+}
+
 .list {
   position: absolute;
   width: 100%;
@@ -29,17 +40,6 @@
 
 .listItem:hover {
   background-color: hsl(206, 33%, 96%);;
-}
-
-.filterIcon {
-  float: right;
-  padding-top: 3px;
-}
-
-.headerText {
-  color: hsl(240, 1%, 49%);
-  font-size: 18px;
-  padding: 10px;
 }
 
 .colorSplotch {
